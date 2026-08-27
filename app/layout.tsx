@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque, Instrument_Sans, IBM_Plex_Mono } from "next/font/google";
+import { GeistSans } from "geist/font/sans";
 import "./globals.css";
 
 const bricolage = Bricolage_Grotesque({
@@ -35,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${bricolage.variable} ${instrument.variable} ${plexMono.variable} antialiased`}
+        className={`${bricolage.variable} ${instrument.variable} ${plexMono.variable} ${GeistSans.variable} antialiased`}
       >
         {children}
       </body>

@@ -110,7 +110,7 @@ export function ContactForm() {
             <button
                 type="submit"
                 disabled={status === "loading"}
-                className="group inline-flex items-center gap-2 bg-blue-800 text-white px-7 py-4 text-sm font-medium tracking-wide transition-all hover:bg-blue-700 hover:-translate-y-0.5 disabled:bg-gray-400 disabled:hover:translate-y-0"
+                className="font-mono text-sm uppercase tracking-wider font-semibold bg-blue-800 text-paper px-6 py-3 hover:opacity-90 transition-opacity rounded-md"
             >
                 {status === "loading" ? "Submitting..." : "Submit Project Details"}
                 <span className="transition-transform group-hover:translate-x-1">
