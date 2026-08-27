@@ -23,20 +23,22 @@ const TickIcon = () => (
 
 export function Comparison() {
     return (
-        <section className="border-b border-gray-100 bg-white">
+        <section className="border-b border-line bg-paper">
             <div className="mx-auto max-w-7xl px-6 py-28">
-                <h2 className="font-sans text-4xl sm:text-5xl font-medium tracking-tight mb-16 max-w-xl text-gray-900">
+                <h2 className="font-display text-4xl sm:text-5xl tracking-tight mb-16 max-w-xl text-ink">
                     Why founders skip the usual freelancer
                 </h2>
-                <div className="border border-gray-100 shadow-sm rounded-lg overflow-hidden">
-                    <div className="grid grid-cols-2 border-b border-gray-100">
-                        <div className="p-6 sm:p-8 border-r border-gray-100 bg-white">
-                            <span className="font-mono text-sm sm:text-base font-semibold uppercase tracking-wider text-gray-400">
+                <div className="border border-line rounded-lg overflow-hidden">
+                    <div className="grid grid-cols-2 border-b border-line">
+                        {/* Left Header */}
+                        <div className="p-6 sm:p-8 border-r border-line bg-surface">
+                            <span className="font-mono text-sm sm:text-base font-semibold uppercase tracking-wider text-ink-soft">
                                 Typical Freelancer
                             </span>
                         </div>
-                        <div className="p-6 sm:p-8 bg-[#111]">
-                            <span className="font-mono text-sm sm:text-base font-semibold uppercase tracking-wider text-white">
+                        {/* Right Header */}
+                        <div className="p-6 sm:p-8 bg-ink">
+                            <span className="font-mono text-sm sm:text-base font-semibold uppercase tracking-wider text-paper">
                                 XLR8 Developers
                             </span>
                         </div>
@@ -44,14 +46,16 @@ export function Comparison() {
                     {rows.map(([left, right], i) => (
                         <div
                             key={left}
-                            className={`grid grid-cols-2 ${i !== rows.length - 1 ? "border-b border-gray-100" : ""
+                            className={`grid grid-cols-2 ${i !== rows.length - 1 ? "border-b border-line" : ""
                                 }`}
                         >
-                            <div className="p-6 sm:p-8 border-r border-gray-100 text-gray-400 text-base sm:text-lg flex items-start gap-4 bg-white">
+                            {/* Left Column (Bad) */}
+                            <div className="font-mono p-6 sm:p-8 border-r border-line text-ink-soft text-sm sm:text-base flex items-start gap-4 bg-paper leading-relaxed">
                                 <CrossIcon />
                                 <span>{left}</span>
                             </div>
-                            <div className="p-6 sm:p-8 text-gray-900 text-base sm:text-lg font-medium bg-gray-50/50 flex items-start gap-4">
+                            {/* Right Column (Good) */}
+                            <div className="font-mono p-6 sm:p-8 text-ink text-sm sm:text-base font-medium bg-surface/40 flex items-start gap-4 leading-relaxed">
                                 <TickIcon />
                                 <span>{right}</span>
                             </div>

@@ -81,7 +81,7 @@ export function Hero() {
                 </h1>
 
                 <p
-                    className="mt-8 max-w-2xl text-lg sm:text-xl text-ink-soft leading-relaxed animate-fade-up"
+                    className="font-mono mt-8 max-w-2xl text-lg sm:text-xl text-ink-soft leading-relaxed animate-fade-up"
                     style={{ animationDelay: "240ms" }}
                 >
                     XLR8 Developers builds and ships full-stack web, mobile, and AI
@@ -95,12 +95,9 @@ export function Hero() {
                 >
                     <Link
                         href="/contact"
-                        className="group inline-flex items-center gap-2 bg-blue-800 text-white px-7 py-4 text-sm font-medium tracking-wide transition-all hover:bg-blue-700 hover:-translate-y-0.5"
+                        className="font-mono text-sm uppercase tracking-wider font-semibold bg-blue-800 text-paper px-6 py-3 hover:opacity-90 transition-opacity rounded-md"
                     >
                         Start a project
-                        <span className="transition-transform group-hover:translate-x-1">
-                            →
-                        </span>
                     </Link>
                     <div className="flex items-center gap-2 text-sm text-ink-faint">
                         <span className="relative flex h-2 w-2">

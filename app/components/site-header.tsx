@@ -29,14 +29,15 @@ export function SiteHeader() {
         >
             <div className="mx-auto max-w-7xl px-6 h-20 flex items-center justify-between">
                 <Link href="/" className="font-display text-2xl tracking-tight">
-                    XLR8<span className="text-signal">.</span>
+                    XLR8<span className="text-signal">.dev</span>
                 </Link>
+
                 <nav className="hidden md:flex items-center gap-10">
                     {links.map((l) => (
                         <Link
                             key={l.href}
                             href={l.href}
-                            className="group relative text-base font-medium text-ink-soft hover:text-ink transition-colors py-1"
+                            className="font-mono text-sm uppercase tracking-widest group relative font-medium text-ink-soft hover:text-ink transition-colors py-1"
                         >
                             {l.label}
                             <span className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-signal transition-all duration-300 group-hover:w-full" />
@@ -46,7 +47,7 @@ export function SiteHeader() {
 
                 <Link
                     href="/contact"
-                    className="text-sm font-semibold bg-blue-800 text-white px-5 py-3 hover:bg-blue-700 transition-colors"
+                    className="font-mono text-sm uppercase tracking-wider font-semibold bg-blue-800 text-paper px-6 py-3 hover:opacity-90 transition-opacity rounded-md"
                 >
                     Book Appointment
                 </Link>

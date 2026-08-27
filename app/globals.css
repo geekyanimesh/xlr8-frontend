@@ -13,6 +13,7 @@
   --font-display: var(--font-bricolage);
   --font-body: var(--font-instrument);
   --font-mono: var(--font-plex-mono);
+  --font-geist: var(--font-geist-sans);
 }
 
 html {
